@@ -19,7 +19,7 @@ const Signup = () => {
   const handleSignup = (e: React.FormEvent) => {
     e.preventDefault();
     // TODO: Integrate with auth backend
-    navigate("/");
+    navigate("/home");
   };
 
   return (

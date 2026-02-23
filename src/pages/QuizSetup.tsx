@@ -29,7 +29,7 @@ const QuizSetup = () => {
 
   return (
     <div className="min-h-screen bg-background px-5 pt-6 pb-8">
-      <button onClick={() => navigate("/")} className="flex items-center gap-2 text-muted-foreground mb-6 hover:text-foreground transition-colors">
+      <button onClick={() => navigate("/home")} className="flex items-center gap-2 text-muted-foreground mb-6 hover:text-foreground transition-colors">
         <ArrowLeft className="w-5 h-5" />
         <span className="text-sm">Back</span>
       </button>

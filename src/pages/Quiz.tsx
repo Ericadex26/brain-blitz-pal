@@ -99,7 +99,7 @@ const Quiz = () => {
         <div className="quiz-card p-8 text-center max-w-sm w-full">
           <p className="text-destructive font-semibold mb-2">Oops!</p>
           <p className="text-muted-foreground text-sm mb-4">{error}</p>
-          <button onClick={() => navigate("/")} className="gradient-primary text-primary-foreground px-6 py-2.5 rounded-xl font-semibold text-sm">
+          <button onClick={() => navigate("/home")} className="gradient-primary text-primary-foreground px-6 py-2.5 rounded-xl font-semibold text-sm">
             Go Home
           </button>
         </div>
@@ -115,7 +115,7 @@ const Quiz = () => {
     <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
       <header className="flex items-center justify-between px-5 pt-5 pb-3">
-        <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
+        <button onClick={() => navigate("/home")} className="text-muted-foreground hover:text-foreground transition-colors">
           <X className="w-6 h-6" />
         </button>
         <h1 className="font-display font-bold text-foreground text-base">{category?.name}</h1>

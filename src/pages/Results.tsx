@@ -19,7 +19,7 @@ const Results = () => {
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="quiz-card p-8 text-center">
           <p className="text-muted-foreground mb-4">Result not found</p>
-          <button onClick={() => navigate("/")} className="gradient-primary text-primary-foreground px-6 py-2.5 rounded-xl font-semibold text-sm">
+          <button onClick={() => navigate("/home")} className="gradient-primary text-primary-foreground px-6 py-2.5 rounded-xl font-semibold text-sm">
             Go Home
           </button>
         </div>
@@ -46,7 +46,7 @@ const Results = () => {
   return (
     <div className="min-h-screen bg-background pb-8">
       <header className="flex items-center justify-between px-5 pt-5 pb-3">
-        <button onClick={() => navigate("/")} className="text-muted-foreground hover:text-foreground transition-colors">
+        <button onClick={() => navigate("/home")} className="text-muted-foreground hover:text-foreground transition-colors">
           <X className="w-6 h-6" />
         </button>
         <h1 className="font-display font-bold text-foreground">Quiz Results</h1>
@@ -114,7 +114,7 @@ const Results = () => {
             <button onClick={() => navigate(-1)} className="flex-1 quiz-card py-3.5 text-center font-semibold text-sm text-primary flex items-center justify-center gap-2">
               <RotateCcw className="w-4 h-4" /> Try Again
             </button>
-            <button onClick={() => navigate("/")} className="flex-1 quiz-card py-3.5 text-center font-semibold text-sm text-foreground">
+            <button onClick={() => navigate("/home")} className="flex-1 quiz-card py-3.5 text-center font-semibold text-sm text-foreground">
               Home
             </button>
           </div>
